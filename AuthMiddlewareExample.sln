@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthMiddlewareExample", "AuthMiddlewareExample\AuthMiddlewareExample.csproj", "{B1382074-C86D-4B0B-8B40-E932C6D46BB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example.Services.Interfaces", "Example.Services.Interfaces\Example.Services.Interfaces.csproj", "{48C046D2-2B57-46F1-AC98-550505456277}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example.Services", "Example.Services\Example.Services.csproj", "{021D8EFE-C765-4F96-8C14-36F65CDCB6C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{B1382074-C86D-4B0B-8B40-E932C6D46BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1382074-C86D-4B0B-8B40-E932C6D46BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1382074-C86D-4B0B-8B40-E932C6D46BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48C046D2-2B57-46F1-AC98-550505456277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C046D2-2B57-46F1-AC98-550505456277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C046D2-2B57-46F1-AC98-550505456277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C046D2-2B57-46F1-AC98-550505456277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{021D8EFE-C765-4F96-8C14-36F65CDCB6C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{021D8EFE-C765-4F96-8C14-36F65CDCB6C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{021D8EFE-C765-4F96-8C14-36F65CDCB6C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{021D8EFE-C765-4F96-8C14-36F65CDCB6C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
