@@ -1,7 +1,7 @@
-﻿namespace AuthMiddlewareExample.Controllers
-{
-    using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
+namespace AuthMiddlewareExample.Controllers
+{
     [Route("[controller]")]
     public class NoAuthController : Controller
     {

@@ -1,18 +1,19 @@
-﻿namespace AuthMiddlewareExample.Middleware
-{
-    using System;
-    using System.Threading.Tasks;
-    using Example.Services.Interfaces.TokenValidation;
-    using Microsoft.AspNetCore.Http;
-    using Microsoft.Extensions.Logging;
+﻿using System;
+using System.Threading.Tasks;
+using Example.Services.Interfaces.TokenValidation;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 
+namespace AuthMiddlewareExample.Middleware
+{
     public class AuthenticationMiddleware
     {
-        private readonly RequestDelegate _next;
         private readonly ILogger<AuthenticationMiddleware> _logger;
+        private readonly RequestDelegate _next;
         private readonly ITokenValidator _tokenValidator;
 
-        public AuthenticationMiddleware(RequestDelegate next, ILogger<AuthenticationMiddleware> logger, ITokenValidator tokenValidator)
+        public AuthenticationMiddleware(RequestDelegate next, ILogger<AuthenticationMiddleware> logger,
+            ITokenValidator tokenValidator)
         {
             _next = next;
             _logger = logger;
@@ -49,7 +50,6 @@
             {
                 _logger.LogError(e, $"AuthMiddleware has exceptioned with the following message: ${e.Message}");
                 context.Response.StatusCode = StatusCodes.Status500InternalServerError;
-                return;
             }
         }
 
@@ -69,7 +69,7 @@
                 return null;
             }
 
-            return authHeader.Substring(("Bearer ").Length).Trim();
+            return authHeader.Substring("Bearer ".Length).Trim();
         }
     }
 }
